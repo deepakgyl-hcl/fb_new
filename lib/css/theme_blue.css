@@ -1,0 +1,81 @@
+
+a:hover { color: #3498db; }
+
+a.button_blue{
+	background-color: transparent;
+	border:1px solid #3498db;
+	color:#3498db;
+}
+
+a.button_blue:hover{
+	background-color:#3498db;
+	border:1px solid #3498db;
+}
+
+.blue{
+	color:#3498db;
+}
+
+#nav .current a, #nav li a:hover {
+	color:#3498db;
+}
+
+#submit-button-header {
+	background-color:#3498db;  
+}
+
+#newsletter-form #submit-button-newsletter {
+    background-color:#3498db;
+}
+
+h3.blog_title a:hover{
+	color:#3498db;
+}
+
+a.blog_icons:hover{
+	color:#3498db;
+}
+
+.blog_comments_icon:hover{
+	color:#3498db;
+}
+
+a.button_grey{border:1px solid #3498db;
+	color:#3498db;
+}
+
+a.button_grey:hover{
+	background-color:#3498db;
+	border:1px solid #3498db;
+}
+
+.featured_dropcap:hover .dropcaps_icon {
+	color:#3498db;
+	border: 1px solid #3498db;
+}
+
+ul.social_icons li a i:hover {
+    color:#3498db;
+}
+
+.subMenu .icon,
+.subMenu .text,
+h2.home_title {
+    color:#3498db;
+}
+
+.services_item { 
+	background:linear-gradient(0deg,rgba(52,152,219,0),rgba(52,152,219,0)),url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,ar_1:1,c_fill,g_auto,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services_item:hover {
+	background:linear-gradient(0deg,rgba(52,152,219,0),rgba(52,152,219,0)),url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,ar_1:1,c_fill,g_auto,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services_item a.services_button {
+	background-color:#3498db;
+}
