@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="lib/css/theme_blue.css">
     <link rel="stylesheet" href="lib/css/fonts.css">
     <link rel="stylesheet" href="lib/css/animate.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  
     
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -24,6 +26,7 @@
     
     <script src="lib/js/jquery-1.11.1.min.js"></script>
     <script src="lib/js/jquery-migrate-1.2.1.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     
 </head>
 
@@ -134,7 +137,7 @@
                                     <input class="contact-input" type="text" required="" name="contact_names" placeholder="Member Number" />
                                 <input class="contact-input contact_fname" type="text" required="" name="contact_fname" placeholder="First Name*" />
                                 <input class="contact-input contact_lname" type="text" required="" name="contact_lname" placeholder="Last Name*" />
-                                <input class="contact-input contact_date" type="date" required="" name="contact_dob" placeholder="Date of Birth (mm/dd/yyyy)" />
+                                <input class="contact-input contact_date" type="text" required="" name="contact_dob" placeholder="Date of Birth (MM/DD/YYYY)" />
                                 <input class="contact-input " type="email" required="" name="contact_email" placeholder="Email Adress*" />
                                 <input class="contact-input " type="text" required="" name="contact_zip" placeholder="Zip Code" />
                                 <input type="submit" value="Register" id="submit-button" class="contact-submit"/>
@@ -195,7 +198,6 @@
                 if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
                     age--;
                 }
-
                 window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+age;
         });
 	});
