@@ -65,13 +65,15 @@ h2.home_title {
 }
 
 .services_item { 
-	background:linear-gradient(0deg,rgba(52,152,219,0),rgba(52,152,219,0)),url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,ar_1:1,c_fill,g_auto,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png);
-	background-repeat: no-repeat;
-    background-size: cover;
+	/*background:linear-gradient(0deg,rgba(52,152,219,0),rgba(52,152,219,0)),url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,ar_1:1,c_fill,g_auto,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png);*/
+	background: #3498db;
+	background-repeat: no-repeat !important;
+    background-size: contain !important;
 }
 
 .services_item:hover {
-	background:linear-gradient(0deg,rgba(52,152,219,0),rgba(52,152,219,0)),url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,ar_1:1,c_fill,g_auto,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png);
+	/*background:linear-gradient(0deg,rgba(52,152,219,0),rgba(52,152,219,0)),url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,ar_1:1,c_fill,g_auto,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png);*/
+	background:#3498db;
 	background-repeat: no-repeat;
     background-size: cover;
 }

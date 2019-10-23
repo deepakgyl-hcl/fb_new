@@ -134,8 +134,7 @@
                                     <input class="contact-input" type="text" required="" name="contact_names" placeholder="Member Number" />
                                 <input class="contact-input contact_fname" type="text" required="" name="contact_fname" placeholder="First Name*" />
                                 <input class="contact-input contact_lname" type="text" required="" name="contact_lname" placeholder="Last Name*" />
-                                <input class="contact-input contact_age" type="text" required="" name="contact_age" placeholder="Age" />
-                                <input class="contact-input " type="text" required="" name="contact_dob" placeholder="Date of Birth (mm/dd/yyyy)" />
+                                <input class="contact-input contact_date" type="date" required="" name="contact_dob" placeholder="Date of Birth (mm/dd/yyyy)" />
                                 <input class="contact-input " type="email" required="" name="contact_email" placeholder="Email Adress*" />
                                 <input class="contact-input " type="text" required="" name="contact_zip" placeholder="Zip Code" />
                                 <input type="submit" value="Register" id="submit-button" class="contact-submit"/>
@@ -188,7 +187,16 @@
 
 
         $("#submit-button").on('click', function() {
-            window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+$(".contact_age").val();
+            var birthDate = new Date($('.contact_date').val()),
+                today = new Date(),
+                age = today.getFullYear() - birthDate.getFullYear(),
+                m = today.getMonth() - birthDate.getMonth();
+
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+
+                window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+age;
         });
 	});
 	</script>
