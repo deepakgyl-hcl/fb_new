@@ -249,7 +249,13 @@
                 $(".services_item_1").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:fff,fl_relative,g_center,l_text:lato_50_style_bold_align_left:Virtual%20Health%0A%0A%0AYour%20health%20care%20should%20not%20be%20limited%20by%20your%0Alocation.With%20virtual%20health%20care%20you%20have%0Aaccess%20to%20providers%2024%20by%207%20and%20you%20can%20access%0Acare%20that%20works%20for%20your%20schedule.,w_0.8,y_20,x_10/v1571807454/Resize-senior-couple-daily-lifestyle-happiness-PQRJ4X6_rubdku.jpg)");
             }
             $("#home_wrapper").css("background","url("+url+")");
-            $(".services_box").css("padding","155px 55px 155px 55px");
+            var mq = window.matchMedia( "(max-width: 767px)" );
+            if (mq.matches) {
+                
+            } else {
+                $(".services_box").css("padding","155px 55px 155px 55px");
+            }
+            
         }
     });
     </script>
