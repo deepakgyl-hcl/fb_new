@@ -706,7 +706,7 @@ a#logo {
 	/*background: url("https://res.cloudinary.com/hclsoftware/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen,b_rgb:3498db/v1571726379/Deepak_/women_with_glass_2_vcpgwj.png");
 	*/
 	background:url("https://res.cloudinary.com/hclsoftware/image/upload/v1571818161/senior-couple-holding-hands_real7q.jpg");
-	background-position: center bottom;
+	background-position: center center !important;
     background-repeat: no-repeat;
 	background-attachment: fixed;
     background-size: cover !important;
